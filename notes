@@ -39,3 +39,12 @@ class Entity:
 a=Entity('Rahul')
 
 print( a)
+
+
+
+#list
+
+
+a=['Ram','Rahim','Ravi']
+result = ["Hi!"+x for x in a]
+print(result)

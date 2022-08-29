@@ -1,0 +1,28 @@
+
+Python ?
+           
+		   Default modules.
+		   Third party Modules.
+		   
+		   application -> [Default modules, third party modules/libraries, 
+		                  tools/utilies]
+						  
+						  
+		  Globally Downloading the tools/utilities/libraries
+		  
+		     Advantages:
+			          Within that particular system all projects 
+                      can use them and call them
+            Disadvantage:
+                     Portability - [when you want to pack and take the application 
+                     to other system, unless we explore the code we never know 
+                     what libraries are needed/used]
+
+
+        Virtual Environment
+
+         In python , Virtual Environment is  a solution for project and Dependency management
+         , we can create a seperate isolated environment for your app/project alone so that 
+         the library dependencies needed for that project will be maintained in that environment
+         itself
+         

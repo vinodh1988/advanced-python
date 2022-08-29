@@ -1,4 +1,4 @@
-from config import db,app,config
+from config import db,app
 from models import Person
 from flask import jsonify,request,abort
 

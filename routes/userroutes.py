@@ -4,7 +4,7 @@ from flask import jsonify,request,abort
 
 
 @app.route('/users',methods=['POST'])
-def addPeople():
+def addUser():
     try:
         input=request.get_json()
         username=input['username']

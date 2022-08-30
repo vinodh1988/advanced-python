@@ -48,3 +48,27 @@ print( a)
 a=['Ram','Rahim','Ravi']
 result = ["Hi!"+x for x in a]
 print(result)
+
+
+
+
+Open - Closed Principle
+
+
+def fun():
+     ---
+
+	 --
+	 ---
+	 ---
+	 ----
+	 
+	 # closed for modifications/changes
+	 # open for extensions
+
+Interceptors
+Filters
+Decorator
+
+Design Pattern 
+                -- Decorator design pattern

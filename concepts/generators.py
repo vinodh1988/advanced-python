@@ -24,6 +24,14 @@ def communicator(callback):
 def receiver(data):
     print("Received -> ",data )
 
+
+## User Defined Exception
+
+class NoMoreYield(Exception):
+    def __init__(self,value):
+        self.value="Cannot yield value anymore because we got "+str(value)
+    def __repr__(self):
+        return self.value
 #communicator(receiver)
 
 
@@ -37,8 +45,8 @@ def fungen():
         print("Will do if only you say yes-->")
         a=int(random.random()*10)
         if a==5 or a==7:
-            print("We are not going to yield any values any more as we got, ",a)
-            break
+            raise(NoMoreYield(a))
+            
         yield listf[a]
     
     
@@ -55,7 +63,11 @@ def caller():
     except StopIteration as e:
             print("no more value to be yielded -> -> ->")
             print(e.value)
-    except:
+    except NoMoreYield as e:
+            print(e.value)
+            print('<<<<<<<<<<<<<<----------->>>>>>')
+    except Exception as e:
+            print(e)
             print('some exception')
     else:
             print('formally stopped no errors')
@@ -65,3 +77,4 @@ def caller():
   
 caller()
         
+

@@ -9,7 +9,7 @@ def createFile(path):
 def addData(path,current):
     filePickle=open(path+"/peopledata",'rb')
     data=pickle.load(filePickle)
-    data[current.sno]=current
+    data[current['sno']]=current
     filePickle.close()
     filePickle=open(path+"/peopledata",'wb')
     pickle.dump(data, filePickle)

@@ -8,7 +8,7 @@ from flask import jsonify,request,abort
 def getFilePeople():
     listp=readData(configdir)
     print(listp)
-    return jsonify({'data':"success"}), 200
+    return jsonify({'result':"success",'data':listp}), 200
 
 
 @app.route('/fpeople',methods=['POST'])

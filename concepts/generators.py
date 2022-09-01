@@ -44,14 +44,24 @@ def fungen():
     
 def caller():
     gen=fungen()
-    while(True):
-        print("user logic is getting execute ->")
-        result=gen.__next__()
-        print('received ->',result)
-        con=input('enter x if you want to exit any other character to continue')
-        if(con=='x'):
-            break
-
+    try:
+        while(True):
+            print("user logic is getting execute ->")
+            result=gen.__next__()
+            print('received ->',result)
+            con=input('enter x if you want to exit any other character to continue')
+            if(con=='x'):
+                break
+    except StopIteration as e:
+            print("no more value to be yielded -> -> ->")
+            print(e.value)
+    except:
+            print('some exception')
+    else:
+            print('formally stopped no errors')
+    finally:
+            print('finishing proceedings')
+    
   
 caller()
         

@@ -1,0 +1,18 @@
+2022-09-01 12:13:08,953  184588-INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-09-01 12:13:08,954  184588-INFO-[33mPress CTRL+C to quit[0m
+2022-09-01 12:13:08,961  184588-INFO- * Restarting with stat
+2022-09-01 12:13:09,559  197476-WARNING- * Debugger is active!
+2022-09-01 12:13:09,562  197476-INFO- * Debugger PIN: 329-357-423
+2022-09-01 12:13:33,890  197476-INFO-127.0.0.1 - - [01/Sep/2022 12:13:33] "[31m[1mGET /people HTTP/1.1[0m" 401 -
+2022-09-01 12:13:38,265  197476-INFO-127.0.0.1 - - [01/Sep/2022 12:13:38] "GET /people HTTP/1.1" 200 -
+2022-09-01 12:13:56,492  197476-ERROR-problem occured
+2022-09-01 12:13:56,514  197476-INFO-127.0.0.1 - - [01/Sep/2022 12:13:56] "[35m[1mPOST /fpeople HTTP/1.1[0m" 500 -
+2022-09-01 12:15:04,450  197476-INFO- * Detected change in 'D:\\PythonAPP\\routes\\fileroutes.py', reloading
+2022-09-01 12:15:36,409  183340-INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-09-01 12:15:36,409  183340-INFO-[33mPress CTRL+C to quit[0m
+2022-09-01 12:15:36,411  183340-INFO- * Restarting with stat
+2022-09-01 12:15:36,920  190500-WARNING- * Debugger is active!
+2022-09-01 12:15:36,925  190500-INFO- * Debugger PIN: 329-357-423
+2022-09-01 12:15:43,376  190500-INFO-127.0.0.1 - - [01/Sep/2022 12:15:43] "[35m[1mPOST /fpeople HTTP/1.1[0m" 201 -

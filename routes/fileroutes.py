@@ -2,7 +2,7 @@ from config import db,app
 from filestore import addData,readData
 from constants import configdir
 from flask import jsonify,request,abort
-import logging
+from  constants import logging
 
 
 @app.route("/fpeople")

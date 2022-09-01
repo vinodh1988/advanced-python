@@ -5,7 +5,7 @@ from threads import logstore,datastore
 import threading
 import os
 from filestore import createFile
-import logging
+from constants import logging
 
 basedir =os.path.abspath(os.path.dirname(__file__))+"/config"
 

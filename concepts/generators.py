@@ -24,4 +24,34 @@ def communicator(callback):
 def receiver(data):
     print("Received -> ",data )
 
-communicator(receiver)
+#communicator(receiver)
+
+
+# Generators  function 
+
+def fungen():
+    listf=['apple','oranges','banana','figs','Dates','Papaya','Gauva','Cherry','Pomegranate','Tomato']
+
+    print('the communciator function started working')
+    while True:
+        print("Will do if only you say yes-->")
+        a=int(random.random()*10)
+        if a==5 or a==7:
+            print("We are not going to yield any values any more as we got, ",a)
+            break
+        yield listf[a]
+    
+    
+def caller():
+    gen=fungen()
+    while(True):
+        print("user logic is getting execute ->")
+        result=gen.__next__()
+        print('received ->',result)
+        con=input('enter x if you want to exit any other character to continue')
+        if(con=='x'):
+            break
+
+  
+caller()
+        
